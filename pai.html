@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function pai(n) {
+            var num1, num2, num;
+            num1 = 1;
+            num2 = 1
+            num = 1;
+            for (var i = 1; i < n; i++) {
+                num1 *= i;
+                num2 = num2 * (2 * i + 1);
+                num += num1 / num2;
+            }
+            console.log(2 * num);
+        }
+        pai(95555);
+        pai(123);
+        console.log(2 * 4);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
